@@ -28,20 +28,33 @@
   <body>
     <div class="carousel">
       <div class="testimonial" id="testimonial-1">
-        <div class="headshot">
-          <img src="./images/image-tanya.jpg" alt="Tanya Sinclair" />
+        <div class="headshot w-full">
+          <div class="headshot-image-wrapper">
+            <img
+              class="headshot-image rounded"
+              src="./images/image-tanya.jpg"
+              alt="Tanya Sinclair"
+            />
+          </div>
           <div class="controls">
             <button><img src="./images/icon-prev.svg" alt="" /></button>
             <button><img src="./images/icon-next.svg" alt="" /></button>
           </div>
         </div>
         <div class="quote">
-          <blockquote>
+          <blockquote class="text-dark-blue font-light">
             “ I’ve been interested in coding for a while but never taken the
             jump, until now. I couldn’t recommend this course enough. I’m now in
             the job of my dreams and so excited about the future. ”
           </blockquote>
-          <h2><span>Tanya Sinclair</span> <span>UX Engineer</span></h2>
+          <h2 class="text-lg">
+            <span class="font-bold display-block text-dark-blue"
+              >Tanya Sinclair</span
+            >
+            <span class="font-medium display-block text-gray-blue"
+              >UX Engineer</span
+            >
+          </h2>
         </div>
       </div>
 
@@ -63,6 +76,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </footer>
-    <img src="./images/pattern-curve.svg" alt="" />
+    <img class="w-7-10" src="./images/pattern-curve.svg" alt="" />
   </body>
 </html>

@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 1px solid rebeccapurple; */
+  outline: 1px solid rebeccapurple;
 }
 
 body {
@@ -20,13 +20,15 @@ body {
 
 .carousel {
   background: url(./images/pattern-curve.svg) bottom left no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -39,7 +41,7 @@ body {
   background: url(./images/pattern-bg.svg) center / contain no-repeat;
   padding: 2.5rem;
   margin: 1.5rem;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -157,8 +159,8 @@ body {
 }
 
 .py-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pt-4 {

@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid rebeccapurple;
+  /* outline: 1px solid rebeccapurple; */
 }
 
 body {
@@ -19,10 +19,11 @@ body {
 }
 
 .carousel {
+  background: url(./images/pattern-curve.svg) bottom left no-repeat;
 }
 
 .testimonial {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   min-height: 100vh;
@@ -32,7 +33,6 @@ body {
 }
 
 .headshot {
-  position: relative;
 }
 
 .headshot-image-wrapper {
@@ -134,10 +134,6 @@ body {
   color: hsl(257, 51%, 60%);
 }
 
-.pt-4 {
-  padding-top: 1.5rem;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -158,6 +154,15 @@ body {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.py-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1.5rem;
 }
 
 .w-7-10 {
@@ -184,28 +189,44 @@ body {
   border-bottom-right-radius: 50%;
 }
 
-.pattern-curve {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .testimonial {
     flex-direction: row-reverse;
+    margin-top: 1rem;
   }
 
   .headshot {
-    flex: 1 1 55%;
+    flex: 1;
+  }
+
+  .headshot-image-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3.75rem;
   }
 
   .quote {
-    flex: 1 1 55%;
+    background: url(./images/pattern-quotes.svg) no-repeat top left 20%;
+    flex: 1;
+    z-index: 1;
+    margin-right: -10rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4.125rem;
+    line-height: 1.25;
+  }
+
+  .name {
+    padding-top: 1.5rem;
   }
 
   .button {
     transform: translateX(-275%);
+  }
+
+  .md-display-inline {
+    display: inline;
   }
 
   .md-text-xl {
@@ -214,5 +235,13 @@ body {
 
   .md-text-3xl {
     font-size: 2rem;
+  }
+
+  .md-text-left {
+    text-align: left;
+  }
+
+  .md-pt-17 {
+    padding-top: 4.25rem;
   }
 }

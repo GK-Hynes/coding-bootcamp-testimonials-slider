@@ -19,7 +19,6 @@ body {
 }
 
 .carousel {
-  /* background: url(./images/pattern-curve.svg) bottom left no-repeat; */
   background-image: url("images/pattern-curve.svg");
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -199,6 +198,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .carousel {
+    background-size: 50%;
+  }
+
   .testimonial {
     flex-direction: row-reverse;
     margin-top: 1rem;
@@ -218,11 +221,8 @@ body {
     background: url(./images/pattern-quotes.svg) no-repeat top left 20%;
     flex: 1;
     z-index: 1;
-    margin-right: -10rem;
-    margin-left: 5rem;
-    margin-bottom: 2rem;
-    padding-left: 4rem;
-    padding-right: 4.125rem;
+    max-width: 650px;
+    margin-right: -150px;
     line-height: 1.25;
   }
 
@@ -231,7 +231,7 @@ body {
   }
 
   .controls {
-    transform: translateY(-250%);
+    transform: translateY(-225%);
   }
 
   .button {

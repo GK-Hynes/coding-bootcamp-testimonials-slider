@@ -25,20 +25,20 @@ body {
   background-size: 75%;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .testimonial {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  /* min-height: 100vh; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .headshot {
-  /* background-color: blueviolet; */
+  position: relative;
 }
 
 .headshot-image-wrapper {
@@ -60,6 +60,7 @@ body {
   width: 100%;
   justify-content: center;
   transform: translateY(-160%);
+  position: absolute;
 }
 
 .button {
@@ -77,7 +78,7 @@ body {
 
 .quote {
   background: url(./images/pattern-quotes.svg) no-repeat top center/20%;
-  margin: 1.25rem 2.125rem;
+  margin: 1rem 2.125rem;
 }
 
 .name {
@@ -197,7 +198,19 @@ body {
   border-bottom-right-radius: 50%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
+  .headshot {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .headshot {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
   .carousel {
     background-size: 50%;
   }
@@ -205,6 +218,7 @@ body {
   .testimonial {
     flex-direction: row-reverse;
     margin-top: 1rem;
+    margin-bottom: 3.5rem;
   }
 
   .headshot {
@@ -214,7 +228,7 @@ body {
   .headshot-image-wrapper {
     margin-left: 0;
     margin-right: 0;
-    padding: 4.5rem;
+    padding: 5rem;
   }
 
   .quote {
@@ -222,7 +236,7 @@ body {
     flex: 1;
     z-index: 1;
     max-width: 650px;
-    margin-right: -150px;
+    margin-right: -158px;
     line-height: 1.25;
   }
 
@@ -235,7 +249,8 @@ body {
   }
 
   .button {
-    transform: translateX(-275%);
+    padding: 1.25rem 1.5rem;
+    transform: translateX(-260%);
   }
 
   .md-display-inline {

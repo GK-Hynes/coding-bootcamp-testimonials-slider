@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 1px solid rebeccapurple; */
 }
 
 body {
@@ -154,9 +153,11 @@ body {
 .m-8 {
   margin: 2rem;
 }
+
 .m-12 {
   margin: 3rem;
 }
+
 .m-auto {
   margin: 0 auto;
 }
@@ -177,9 +178,11 @@ body {
 .w-7-10 {
   width: 70%;
 }
+
 .w-8-10 {
   width: 80%;
 }
+
 .w-full {
   width: 100%;
 }
